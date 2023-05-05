@@ -1,0 +1,148 @@
+:root {
+  --bg: #f2fdff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+.hidden-mobile {
+  display: none;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+body {
+  background-color: var(--bg);
+}
+/* General classes for flexboxes*/
+.row {
+  display: flex;
+  align-items: center;
+}
+/* Header with flexbox */
+header{
+  background-color: #c7c7c7;
+  height: 6%;
+}
+.headflex {
+  justify-content: space-between;
+  margin: auto;
+  max-width: 1660px;
+  padding: 5px;
+
+/* Buttons with animations for hovering over them*/
+}
+.btn {
+  border: 2px solid #101935;
+  font-size: 22px;
+  border-radius: 6px;
+}
+.primary {
+  background-color: #101935;
+  color: #f2fdff;
+  padding: 15px;
+  width: 150px;
+  transition: 0.3s;
+}
+.primary:hover {
+  background-color: #7e7f9a;
+  border-color: #7e7f9a;
+  cursor: pointer;
+}
+.secondary {
+  padding: 3px;
+  text-decoration: none;
+  font-family: 'Sarabun';
+  font-weight: 400;
+  color: #7e7f9a;
+
+  transition: 0.3s;
+}
+.secondary:hover {
+  background-color: #7e7f9a;
+  border-color: #7e7f9a;
+  cursor: pointer;
+  color: #f2fdff;
+}
+/* Login/input fields */
+input{
+  border: 2px solid #101935;
+  font-size: 18px;
+  border-radius: 6px;
+  font-family: 'Sarabun';
+}
+
+/* Removes decorations from list */
+ul{
+  list-style: none;
+}
+
+/* Main content of the pages */
+main {
+  max-width: 1440px;
+  height: 84%;
+  margin: auto;
+}
+body.kirjautuminen {
+  background-image: url("../assets/img/jonne-huotari-0RpP5OHaojY-unsplash.jpeg");
+}
+body.normal {
+  background-image: url("../assets/img/sami-takarautio-v05Hv8lT-40-unsplash.jpeg");
+}
+h1 {
+  font-family: 'Fjalla One';
+  font-size: 52px;
+  font-weight: 400;
+}
+.left {
+  width: 32%;
+  vertical-align: baseline;
+}
+.vertical {
+  vertical-align: baseline;
+}
+p {
+  font-family: 'Sarabun';
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #c7c7c7;
+  height: 10%
+}
+
+
+
+/* Utility classes */
+
+.md-box {
+  width: 550px;
+}
+.tcenter {
+  text-align: center;
+}
+.around {
+  justify-content: space-around;
+}
+.between {
+  justify-content: space-between;
+}
+.wide {
+  width: 100%;
+}
+.sm-pad {
+  padding: 1%;
+}
+.floatright {
+  float: right;
+}
